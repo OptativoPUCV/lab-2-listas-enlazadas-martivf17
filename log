@@ -54,3 +54,14 @@ list.c:45:12: error: return makes pointer from integer without a cast [-Werror=i
 cc1.exe: all warnings being treated as errors
 Compilation failed
 7f1146b
+Fri, Mar 28, 2025 11:54:21 AM: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function 'firstList':
+list.c:44:16: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+     int *aux = list->head;
+                ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+2655606
