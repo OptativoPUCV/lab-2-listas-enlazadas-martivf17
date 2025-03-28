@@ -41,8 +41,8 @@ List * createList() {
 }
 
 void * firstList(List * list) {
-    int *aux = list->head;
-    return aux;
+    
+    return list ->head;
 }
 
 void * nextList(List * list) {

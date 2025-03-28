@@ -65,3 +65,9 @@ list.c:44:16: error: initialization from incompatible pointer type [-Werror=inco
 cc1.exe: all warnings being treated as errors
 Compilation failed
 2655606
+Fri, Mar 28, 2025 11:56:09 AM: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  1|5
+total_score: 10/70
+a944e0c
