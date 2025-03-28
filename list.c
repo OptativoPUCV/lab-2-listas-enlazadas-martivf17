@@ -29,26 +29,35 @@ Node * createNode(void * data) {
 }
 
 List * createList() {
-     return NULL;
+    List *L = (List *)malloc(sizeof(List));
+    if(L == NULL){
+        exit(EXIT_FAILURE);
+    }
+     return L;
 }
 
 void * firstList(List * list) {
+
     return NULL;
 }
 
 void * nextList(List * list) {
+
     return NULL;
 }
 
 void * lastList(List * list) {
+
     return NULL;
 }
 
 void * prevList(List * list) {
+
     return NULL;
 }
 
 void pushFront(List * list, void * data) {
+
 }
 
 void pushBack(List * list, void * data) {
