@@ -91,22 +91,23 @@ void pushBack(List * list, void * data) {
     pushCurrent(list,data);
 }
 
-void pushCurrent(List * list, void * data) {
-    if(list == NULL || list->current == NULL)
-        return NULL;
+Node *nuevo = createNode(data);
 
-    Node *newNode = createNode(data);
-    Node *aux = list->current->next;
-
-    newNode->prev = list->current;
-    newNode->next = aux;
-
-    list->current->next = newNode;
-    if(aux != NULL)
-        aux->prev = newNode;
+    if (list->current->next == NULL)
+    {
+        list->current->next = nuevo;
+        nuevo->prev = list->current;
+        nuevo->next = NULL;
+        list->tail = nuevo;
+    }
     else
-        list->tail = newNode;
-}
+    {
+        nuevo->next = list->current->next;
+        list->current->next->prev = nuevo;
+        nuevo->prev = list->current;
+        list->current->next = nuevo;
+    }
+
 
 void * popFront(List * list) {
     list->current = list->head;

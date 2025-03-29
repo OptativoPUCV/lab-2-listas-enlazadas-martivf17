@@ -412,3 +412,18 @@ list.c:94:6: note: declared here
 cc1.exe: all warnings being treated as errors
 Compilation failed
 44a40c6
+Sat, Mar 29, 2025  8:08:03 PM: 
+ list.c | 27 ++++++++++++++-------------
+ 1 file changed, 14 insertions(+), 13 deletions(-)
+In file included from test.c:5:0:
+list.c:94:26: error: 'data' undeclared here (not in a function)
+ Node *nuevo = createNode(data);
+                          ^~~~
+list.c:96:5: error: expected identifier or '(' before 'if'
+     if (list->current->next == NULL)
+     ^~
+list.c:103:5: error: expected identifier or '(' before 'else'
+     else
+     ^~~~
+Compilation failed
+bff418a
