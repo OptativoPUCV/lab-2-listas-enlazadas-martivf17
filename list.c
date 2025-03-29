@@ -122,8 +122,10 @@ void * popCurrent(List * list) {
     if(list == NULL || list->current == NULL)
         return NULL;
 
+    Node *aux = list->current;
     
-
+    void *data = aux->data;
+    
 
 
     return NULL;
