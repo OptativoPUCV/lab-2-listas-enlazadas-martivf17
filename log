@@ -400,3 +400,15 @@ list.c:94:6: note: declared here
 cc1.exe: all warnings being treated as errors
 Compilation failed
 d5e1e47
+Sat, Mar 29, 2025  8:06:12 PM: 
+In file included from test.c:5:0:
+list.c: In function 'pushCurrent':
+list.c:96:16: error: 'return' with a value, in function returning void [-Werror]
+         return NULL;
+                ^~~~
+list.c:94:6: note: declared here
+ void pushCurrent(List * list, void * data) {
+      ^~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+44a40c6
