@@ -147,4 +147,6 @@ void cleanList(List * list) {
     }
 }
 
-/*FIN DEL PROGRAMA*/
+/*
+FIN DEL PROGRAMA
+*/
