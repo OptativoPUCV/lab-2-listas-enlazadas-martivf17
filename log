@@ -440,3 +440,16 @@ list.c:103:5: error: expected identifier or '(' before 'else'
      ^~~~
 Compilation failed
 be135bf
+Sat, Mar 29, 2025  8:11:13 PM: 
+In file included from test.c:5:0:
+list.c:94:26: error: 'data' undeclared here (not in a function)
+ Node *nuevo = createNode(data);
+                          ^~~~
+list.c:96:5: error: expected identifier or '(' before 'if'
+     if (list->current->next == NULL)
+     ^~
+list.c:103:5: error: expected identifier or '(' before 'else'
+     else
+     ^~~~
+Compilation failed
+e4000f3
