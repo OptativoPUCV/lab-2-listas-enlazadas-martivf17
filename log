@@ -77,3 +77,9 @@ Fri, Mar 28, 2025 10:31:42 PM:
  tests:  1|5
 total_score: 10/70
 cade46a
+Fri, Mar 28, 2025 10:40:56 PM: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  2|5
+total_score: 15/70
+eadedbc
