@@ -118,13 +118,12 @@ void * popBack(List * list) {
     return popCurrent(list);
 }
 
-void * popCurrent(List * list) {
-    if(list == NULL || list->current == NULL)
-        return NULL;
-
+void * popCurrent(List * list) 
+{
+    if (list == NULL || list->current == NULL) return NULL;
     Node *aux = list->current;
+    
     void *data = aux->data;
-
     if (aux->prev != NULL) 
         aux->prev->next = aux->next;
     else 
@@ -135,12 +134,10 @@ void * popCurrent(List * list) {
     else 
         list->tail = aux->prev;
     
-    
-    //list->current = (aux->next) ? aux->next : aux->prev;
-    
     free(aux);
     return data;
 }
+
 
 void cleanList(List * list) {
     while (list->head != NULL) {
