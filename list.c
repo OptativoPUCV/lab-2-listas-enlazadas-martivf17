@@ -93,7 +93,7 @@ void pushBack(List * list, void * data) {
 
 void pushCurrent(List * list, void * data) {
     if(list == NULL || list->current == NULL)
-        return;
+        return NULL;
 
     Node *newNode = createNode(data);
     Node *aux = list->current->next;
@@ -119,6 +119,13 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
+    if(list == NULL || list->current == NULL)
+        return NULL;
+
+    
+
+
+
     return NULL;
 }
 
