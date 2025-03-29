@@ -137,7 +137,6 @@ void * popCurrent(List * list) {
     
     free(aux);
     return data;
-    return NULL;
 }
 
 void cleanList(List * list) {
@@ -145,3 +144,5 @@ void cleanList(List * list) {
         popFront(list);
     }
 }
+
+/*FIN DEL PROGRAMA*/
